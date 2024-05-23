@@ -232,5 +232,3 @@ def generate_security_report(network_range):
     print("--------------------------------------------------------")
     pdf.write_html(HTML)
     pdf.output(output_pdf)
-
-generate_security_report("192.168.1.0/24")
