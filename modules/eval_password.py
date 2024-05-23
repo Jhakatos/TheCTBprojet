@@ -31,7 +31,7 @@ def evaluate_pwd_strength(password):
     
     # Check if the password is common by comparing it to a list of common passwords
     common_pwd = False
-    pwd_file = 'modules/logins'
+    pwd_file = 'modules\keys_logins.csv'
     with open(pwd_file, 'r') as f:
         words = f.read().splitlines()
         if password.lower() in words:
@@ -52,6 +52,7 @@ def evaluate_pwd_strength(password):
         return "Good"
     else:
         return "Very Good"
+
 
 def evaluate_csv_passwords(logins):
     """Evaluates the strength of passwords in a CSV file.
